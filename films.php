@@ -39,7 +39,7 @@ foreach ($stmt as $row) {
     echo "<br> omschrijving:" . $row['omschrijving'] . "\n";
     echo '<iframe width="560" height="315" src= "https://www.youtube.com/embed/' . $row["id_trailer"] . '" frameborder="0" allow="accelerometer; autoplay; encrypted-media;
     gyroscope; picture-in-picture" allowfullscreen></iframe>';
- }
+}
 ?>
 </body>
 </html>

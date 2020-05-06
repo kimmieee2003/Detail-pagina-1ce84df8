@@ -35,7 +35,7 @@ foreach ($stmt as $row) {
 }
 $stmt = $dbh->query('SELECT country FROM series WHERE id = "' . $_GET['id'] . '"');
 foreach ($stmt as $row) {
-    echo "<br> country:". $row['country'] . "\n";
+    echo "<br> country:" . $row['country'] . "\n";
 }
 $stmt = $dbh->query('SELECT language FROM series WHERE id = "' . $_GET['id'] . '"');
 foreach ($stmt as $row) {
