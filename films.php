@@ -32,13 +32,14 @@ try {
 <body>
 <?php
 $stmt = $dbh->query('SELECT * FROM films WHERE id = "' . $_GET['id'] . '"');
- foreach ($stmt as $row) {
+foreach ($stmt as $row) {
     echo $row['naam'] . "\n";
     echo "<br> land:" . $row['land'] . "\n";
     echo "<br> datum uitkomst:" . $row['datum_uitkomst'] . "\n";
     echo "<br> omschrijving:" . $row['omschrijving'] . "\n";
-    echo '<iframe width="560" height="315" src= "https://www.youtube.com/embed/' . $row["id_trailer"] . '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
-}
+    echo '<iframe width="560" height="315" src= "https://www.youtube.com/embed/' . $row["id_trailer"] . '" frameborder="0" allow="accelerometer; autoplay; encrypted-media;
+    gyroscope; picture-in-picture" allowfullscreen></iframe>';
+ }
 ?>
 </body>
 </html>

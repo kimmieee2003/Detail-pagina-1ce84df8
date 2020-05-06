@@ -26,12 +26,12 @@ foreach ($stmt as $row) {
 }
  $stmt = $dbh->query('SELECT has_won_awards FROM series WHERE id = "' . $_GET['id'] . '"');
 foreach ($stmt as $row) {
-     echo "<br> awards:". $row['has_won_awards'] . "\n";
+     echo "<br> awards:" . $row['has_won_awards'] . "\n";
 }
 
 $stmt = $dbh->query('SELECT seasons FROM series WHERE id = "' . $_GET['id'] . '"');
 foreach ($stmt as $row) {
-    echo "<br> seasons:". $row['seasons'] . "\n";
+    echo "<br> seasons:" . $row['seasons'] . "\n";
 }
 $stmt = $dbh->query('SELECT country FROM series WHERE id = "' . $_GET['id'] . '"');
 foreach ($stmt as $row) {
@@ -39,10 +39,10 @@ foreach ($stmt as $row) {
 }
 $stmt = $dbh->query('SELECT language FROM series WHERE id = "' . $_GET['id'] . '"');
 foreach ($stmt as $row) {
-    echo "<br> language:". $row['language'] . "\n";
+    echo "<br> language:" . $row['language'] . "\n";
 }
 $stmt = $dbh->query('SELECT description FROM series WHERE id = "' . $_GET['id'] . '"');
 foreach ($stmt as $row) {
-    echo "<br> description:". $row['description'] . "\n";
+    echo "<br> description:" . $row['description'] . "\n";
 }
 ?>
